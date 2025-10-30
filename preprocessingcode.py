@@ -20,5 +20,6 @@ df = df[['id', 'hashtags']]
 df = df[df['hashtags'].str.strip() != ''].reset_index(drop=True)
 
 # Save to CSV for your app
-df.to_csv("newfile.csv", index=False)
-print("Saved as newfile.csv with real Kaggle data!")
+df.to_csv("insta_processed.csv", index=False)
+print("Saved as insta_processed.csv with real Kaggle data!")
+
